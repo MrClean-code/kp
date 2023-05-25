@@ -1,0 +1,6 @@
+module:com.project.nandsbook2
+com.project
+com.project.db
+com.project.entity
+com.project.parse
+com.project.repository

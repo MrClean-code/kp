@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="TOP_CENTER" prefHeight="555.0" prefWidth="1050.0" spacing="20.0" style="-fx-background-color: #ebdd6c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.HelloController">
+    <VBox>
+        <Label prefHeight="16.0" prefWidth="300" text="Введите название образовательной программы: " />
+        <TextField fx:id="specializationField" prefHeight="13.0" prefWidth="246.0" />
+
+        <Label prefHeight="16.0" prefWidth="300.0" text="Введите средний балл для Б, С: " />
+        <TextField fx:id="middleScoreExam" prefHeight="13.0" prefWidth="246.0" />
+
+        <Label prefHeight="16.0" prefWidth="350.0" text="Введите минимальный балл по диплому для СПО: " />
+        <TextField fx:id="middleScoreDiploma" prefHeight="13.0" prefWidth="246.0" />
+
+        <Label prefHeight="20.0" prefWidth="300.0" />
+        <Button mnemonicParsing="false" onAction="#onFindDataButton" prefHeight="25.0" prefWidth="250.0" text="Просмореть" />
+
+        <Label prefHeight="3.0" prefWidth="300.0" />
+        <Button mnemonicParsing="false" onAction="#onUpdateDataButton" prefHeight="25.0" prefWidth="250.0" text="Обновить" />
+    </VBox>
+
+    <TableView fx:id="tableView" prefHeight="510.0" prefWidth="1100.0">
+
+    </TableView>
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+
+
+</HBox>
