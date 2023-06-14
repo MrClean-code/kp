@@ -6,9 +6,9 @@
 
  - **Технологический стек**: Java core, JavaFx, postgresql, maven
   - **Статус**:  1.0.0
-  - **Ссылка на продукт или демо-экземпляр**
-  - https://github.com/MrClean-code/kp/edit/master/README.md
-**Скриншот рабочего окна приложения**: If the software has visual components, place a screenshot after the description; e.g.,
+  - **Ссылка на продукт или демо-экземпляр** https://github.com/MrClean-code/kp/edit/master/README.md
+
+**Скриншот рабочего окна приложения**:
 
 ![image](https://github.com/MrClean-code/kp/assets/78147625/626c8d17-4f67-4939-9c3e-dfcede15238f)
 
