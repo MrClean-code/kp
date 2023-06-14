@@ -5,25 +5,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox alignment="TOP_CENTER" prefHeight="555.0" prefWidth="1050.0" spacing="20.0" style="-fx-background-color: #ebdd6c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.HelloController">
-    <VBox>
-        <Label prefHeight="16.0" prefWidth="300" text="Введите название образовательной программы: " />
-        <TextField fx:id="specializationField" prefHeight="13.0" prefWidth="246.0" />
+<HBox fx:id="parentHBox" alignment="TOP_CENTER" prefHeight="555.0" prefWidth="1050.0" spacing="20.0" style="-fx-background-color: #ebdd6c;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.HelloController">
+    <VBox prefHeight="515.0" prefWidth="240.0">
+        <Label />
+        <Label layoutX="10.0" layoutY="181.0" prefHeight="3.0" prefWidth="300.0" text="Введите роль" />
+        <TextField fx:id="role" layoutX="10.0" layoutY="27.0" prefHeight="25.0" prefWidth="200.0" />
+
+        <Label prefHeight="17.0" prefWidth="287.0" text="Введите название образовательной программы: " />
+        <TextField fx:id="specializationField" prefHeight="25.0" prefWidth="200.0" />
 
         <Label prefHeight="16.0" prefWidth="300.0" text="Введите средний балл для Б, С: " />
-        <TextField fx:id="middleScoreExam" prefHeight="13.0" prefWidth="246.0" />
+        <TextField fx:id="middleScoreExam" prefHeight="25.0" prefWidth="200" />
 
         <Label prefHeight="16.0" prefWidth="350.0" text="Введите минимальный балл по диплому для СПО: " />
-        <TextField fx:id="middleScoreDiploma" prefHeight="13.0" prefWidth="246.0" />
+        <TextField fx:id="middleScoreDiploma" prefHeight="13.0" prefWidth="206.0" />
 
         <Label prefHeight="20.0" prefWidth="300.0" />
-        <Button mnemonicParsing="false" onAction="#onFindDataButton" prefHeight="25.0" prefWidth="250.0" text="Просмореть" />
+        <Button mnemonicParsing="false" onAction="#onFindDataButton" prefHeight="25.0" prefWidth="200.0" text="Просмореть" />
 
         <Label prefHeight="3.0" prefWidth="300.0" />
-        <Button mnemonicParsing="false" onAction="#onUpdateDataButton" prefHeight="25.0" prefWidth="250.0" text="Обновить" />
+        <Button mnemonicParsing="false" onAction="#onUpdateDataButton" prefHeight="25.0" prefWidth="200.0" text="Обновить таблицу" />
     </VBox>
 
-    <TableView fx:id="tableView" prefHeight="510.0" prefWidth="1100.0">
+    <TableView fx:id="tableView" prefHeight="515.0" prefWidth="1100.0">
 
     </TableView>
 

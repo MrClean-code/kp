@@ -1,6 +1,9 @@
 package com.project.parse;
 
+import com.project.HelloController;
 import com.project.entity.Education;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -16,6 +19,7 @@ public class ParseEducation {
     private static Map<String, String> middleScoreDiplomaMap;
     private static Map<String, String> middleScoreExamMap;
     private static List<Education> educationList = new ArrayList<>();
+    private static final Logger logger = LogManager.getLogger(ParseEducation.class);
 
     public List<Education> parse() {
 
@@ -32,6 +36,7 @@ public class ParseEducation {
         try {
             document = Jsoup.connect("https://cchgeu.ru/education/programms/").get();
         } catch (IOException e) {
+            logger.error("ошибка при обращении к сайту https://cchgeu.ru/education/programms/");
             throw new RuntimeException(e);
         }
 
@@ -99,6 +104,7 @@ public class ParseEducation {
         try {
             document = Jsoup.connect("https://cchgeu.ru/abiturientu/spo/itogi/").get();
         } catch (IOException e) {
+            logger.error("ошибка при обращении к сайту https://cchgeu.ru/abiturientu/spo/itogi/");
             throw new RuntimeException(e);
         }
 
@@ -130,6 +136,7 @@ public class ParseEducation {
         try {
             document = Jsoup.connect("https://cchgeu.ru/abiturientu/bak-spec/itogi/").get();
         } catch (IOException e) {
+            logger.error("ошибка при обращении к сайту https://cchgeu.ru/abiturientu/bak-spec/itogi/");
             throw new RuntimeException(e);
         }
 

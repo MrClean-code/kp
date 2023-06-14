@@ -3,6 +3,7 @@ module com.project.nandsbook2 {
     requires javafx.fxml;
     requires java.sql;
     requires org.jsoup;
+    requires org.apache.logging.log4j;
 
 
     opens com.project to javafx.fxml;
